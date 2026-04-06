@@ -1,0 +1,18 @@
+# -*- mode: conf -*-
+
+[Unit]
+Description=cAdvisor exposes container metrics
+Documentation=https://github.com/google/cadvisor
+After=network.target
+
+[Service]
+EnvironmentFile=-/etc/default/cadvisor
+User=root
+ExecStart=/usr/bin/cadvisor $CADVISOR_OPTS
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=5s
+
+
+[Install]
+WantedBy=multi-user.target
