@@ -10,8 +10,8 @@ License: ASL 2.0
 URL:     https://github.com/google/cadvisor
 
 Source0: https://github.com/google/cadvisor/releases/download/v%{version}/%{name}-v%{version}-linux-amd64
-Source1: autogen_%{name}.unit
-Source2: autogen_%{name}.default
+Source1: %{name}.unit
+Source2: %{name}.default
 
 %{?systemd_requires}
 Requires(pre): shadow-utils
