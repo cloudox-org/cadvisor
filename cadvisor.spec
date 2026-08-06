@@ -50,7 +50,7 @@ exit 0
 %{_unitdir}/%{name}.service
 
 %changelog
-* Thu Aug 6 2026 Ivan Garcia <igarcia@cloudox.org> - 0.60.5
+* Thu Aug 06 2026 Ivan Garcia <igarcia@cloudox.org> - 0.60.5
 - Initial packaging for the 0.60.5 branch
 * Tue Mar 31 2026 Ivan Garcia <igarcia@cloudox.org> - 0.56.2
 - Initial packaging for the 0.56.2 branch
