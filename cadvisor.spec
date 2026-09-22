@@ -3,7 +3,7 @@
 %global group root
 
 Name: cadvisor
-Version: 0.60.5
+Version: 0.60.6
 Release: 1%{?dist}
 Summary: cAdvisor exposes container metrics
 License: ASL 2.0
@@ -50,6 +50,8 @@ exit 0
 %{_unitdir}/%{name}.service
 
 %changelog
+* Tue Sep 22 2026 Ivan Garcia
+- Bump version to 0.60.6
 * Thu Aug 06 2026 Ivan Garcia <igarcia@cloudox.org> - 0.60.5
 - Initial packaging for the 0.60.5 branch
 * Tue Mar 31 2026 Ivan Garcia <igarcia@cloudox.org> - 0.56.2
